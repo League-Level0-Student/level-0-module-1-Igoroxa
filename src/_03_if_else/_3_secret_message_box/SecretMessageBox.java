@@ -31,8 +31,12 @@ JOptionPane.showMessageDialog(null, "You can only see the message if you know th
 String Attempt = JOptionPane.showInputDialog("What is the password?");
 	// 5. If the password does not match, pop-up "INTRUDER!!"
 		if(Password.equals (Attempt)) {
-			JOptionPane.showMessageDialog(null, message);
+			JOptionPane.showMessageDialog(null, SecretMessage);
 			
+			
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "INTRUDER");
 		}
 	}
 }
